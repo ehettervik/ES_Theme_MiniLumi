@@ -1,0 +1,192 @@
+<!-- 
+Theme: MiniLumi
+version: 1.0
+author: Eric Hettervik (Rookervik)
+license: creative commons CC-BY-NC-SA
+Based in part on Carbon and Luminus, by Eric Hettervik (Rookervik)
+
+Element color: Search and replace colors. Do not use spaces
+	Red 	8b 00 00
+	Blue 	30 82 ce
+	Green 	50 d6 2c
+	Yellow	ef bc 0b
+	Orange	ef 71 0b
+	Purple	ac 0b ef
+	Teal	04 e9 f7
+	Pink	f5 02 97
+-->
+
+
+
+<theme>
+    <formatVersion>3</formatVersion>
+	
+	<view name="basic, detailed, system">
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./art/box.png</path>
+			<color>d1d3d4</color>
+		</image>
+		
+		<helpsystem name="help">
+			<textColor>8f8c8d00</textColor>
+			<iconColor>8f8c8d00</iconColor>
+		</helpsystem>
+		
+
+	</view>
+	
+	<view name="system">
+	
+		<image name="color_bar_top" extra="true">
+			<tile>false</tile>
+			<pos>0 0.378</pos>
+			<origin>0 0</origin>
+			<size>1 0.01</size>
+			<path>./art/box.png</path>
+			<color>74ccf3</color>
+		</image> 
+
+		<image name="color_bar_bottom" extra="true">
+			<tile>false</tile>
+			<pos>0 0.615</pos>
+			<origin>0 0</origin>
+			<size>1 0.005</size>
+			<path>./art/box.png</path>
+			<color>74ccf3</color>
+		</image> 		
+
+	</view>
+	
+	<view name="basic">
+	
+		<textlist name="gamelist">
+			<selectorColor>74ccf350</selectorColor>
+			<selectedColor>000000</selectedColor>
+			<primaryColor>726f70</primaryColor>
+			<secondaryColor>7a6161</secondaryColor>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<forceUppercase>1</forceUppercase>
+			<alignment>center</alignment>
+			<horizontalMargin>0.02</horizontalMargin>
+			<fontSize>0.05</fontSize>
+			<scrollSound>./art/scroll.wav</scrollSound>
+			<pos>0.04 0.18</pos>
+			<size>0.93 0.82</size>
+		</textlist>
+		
+	</view>
+
+	<view name="detailed">
+	
+
+		
+		<image name="md_image">
+			<pos>0.5 0.42</pos>
+			<maxSize>0.8 0.48</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		
+		<text name="No_Image" extra="true">
+			<pos>0.0 0.42</pos>
+			<size>1 0</size>
+			<text>No Image</text>
+			<alignment>center</alignment>
+			<color>a0a0a0</color>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+		</text>			
+
+		
+		<text name="md_lbl_rating, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount,md_lbl_releasedate, md_lbl_genre, md_genre, md_lbl_developer, md_developer, md_lbl_players, md_players">
+			<color>726f70</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.023</fontSize>
+			<size>0 0</size>
+			<pos>1 1</pos>
+		</text>
+		
+		<datetime name="md_releasedate, md_lastplayed">
+			<pos>1 1</pos>
+			<color>726f70</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.023</fontSize>
+		</datetime>
+
+		<rating name="md_rating">
+			<pos>1 1</pos>
+			<size>0.028 0.028</size>
+			<filledPath>./art/star_filled_spacing.svg</filledPath>
+			<unfilledPath>./art/star_hollow_3_spacing.svg</unfilledPath>
+		</rating>
+		
+		<text name="md_description">
+			<color>726f70</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.023</fontSize>
+			<size>0 0</size>
+			<pos>1 1</pos>
+		</text>
+		
+		<textlist name="gamelist">
+			<selectorColor>74ccf350</selectorColor>
+			<selectedColor>000000</selectedColor>
+			<primaryColor>726f70</primaryColor>
+			<secondaryColor>7a6161</secondaryColor>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<forceUppercase>1</forceUppercase>
+			<alignment>center</alignment>
+			<horizontalMargin>0.02</horizontalMargin>
+			<fontSize>0.05</fontSize>
+			<scrollSound>./art/scroll.wav</scrollSound>
+			<pos>0.04 0.7</pos>
+			<size>0.93 0.3</size>
+		</textlist>
+		
+		</view>	
+	
+	<view name="basic, detailed">
+	
+		<image name="left_colored_bar" extra="true">
+			<tile>false</tile>
+			<pos>0.030 0.12</pos>
+			<origin>0 0</origin>
+			<size>0.01 0.90</size>
+			<path>./art/box.png</path>
+			<color>74ccf3</color>
+		</image>
+		
+		<image name="right_colored_bar" extra="true">
+			<tile>false</tile>
+			<pos>0.970 0.12</pos>
+			<origin>0 0</origin>
+			<size>0.01 0.903</size>
+			<path>./art/box.png</path>
+			<color>74ccf3</color>
+		</image>
+	
+		<image name="gamelist_overlay" extra="true">
+			<tile>false</tile>
+			<size>1 0.21</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./art/gamelist_overlay.png</path>
+			<color>ffffff</color>
+		</image>
+		
+		<image name="logo">
+			<path>./art/system.svg</path>
+			<pos>0.5 0.07</pos>
+			<maxSize>0.35 0.10</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		
+	</view>	
+
+	
+</theme>
